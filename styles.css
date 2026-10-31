@@ -1,0 +1,80 @@
+/* RTL Alignment for Arabic */
+.rtl-mode [data-testid="stMainBlockContainer"], 
+.rtl-mode [data-testid="stSidebarContent"],
+.rtl-mode [data-testid="stMetricLabel"],
+.rtl-mode [data-testid="stMetricValue"],
+.rtl-mode h1, .rtl-mode h2, .rtl-mode h3, 
+.rtl-mode h4, .rtl-mode p, .rtl-mode label {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* Metric styling fix */
+div[data-testid="stMetricValue"] > div {
+    font-size: 1.15rem !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    line-height: 1.25 !important;
+}
+
+/* Expander base styling */
+[data-testid="stExpander"] {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* Calendar Grid */
+.cal-table { 
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 4px; 
+    table-layout: fixed; 
+    margin-top: 10px; 
+}
+.cal-header { 
+    text-align: center; 
+    font-weight: 600; 
+    padding: 8px 2px; 
+    color: #64748b; 
+    font-size: 0.85rem; 
+}
+.cal-cell { 
+    height: 80px; 
+    vertical-align: top; 
+    border-radius: 8px; 
+    padding: 4px; 
+    background: #f8fafc; 
+    border: 1px solid #e2e8f0; 
+    font-size: 0.8rem; 
+    overflow: hidden; 
+}
+.cal-cell.dark { 
+    background: #1e293b; 
+    border-color: #334155; 
+}
+.cal-cell.empty { 
+    background: transparent; 
+    border: none; 
+}
+.cal-cell.today { 
+    border: 2px solid #3b82f6 !important; 
+    font-weight: bold; 
+}
+.cal-num { 
+    font-size: 0.85rem; 
+    font-weight: bold; 
+    margin-bottom: 2px; 
+    display: block; 
+}
+.cal-event-badge { 
+    background: #2563eb; 
+    color: #ffffff !important; 
+    border-radius: 4px; 
+    padding: 2px 5px; 
+    margin-top: 2px; 
+    font-size: 0.72rem; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: block; 
+}
